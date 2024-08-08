@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var n=+prompt();
+        var k=+prompt();
+        var max=0, min=0;
+        if(n>k){
+          max =n;
+          min=k;
+        }
+        else{
+          max=k;
+          min=n;
+        }
+        for (var i=1; i<=min; i++){
+          if ((max*i)%min==0){
+            console.log(max*i);
+            break;
+          }
+        }
+        </script>
+    </body>
+</html>
